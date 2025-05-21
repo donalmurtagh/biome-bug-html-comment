@@ -1,10 +1,16 @@
-Reproduces a bug in Biome that causes the formatter to fail if the file contains HTML elements nested in HTML comments. Follow these steps to reproduce this issue:
+Reproduces a bug in Biome that causes the formatter to fail if the file contains HTML elements nested in HTML comments. 
 
- - Download this repo
+## Instructions
+
+Follow these steps to reproduce this issue:
+
+ - Download this repository
  - Run `yarn install`
  - Run `yarn biome format --write`
 
-The cause of the issue is the HTML element nested inside the HTML comment in `src/app.vue
+## Cause
+
+The cause of the issue is the HTML element nested inside the HTML comment in `src/app.vue`
 
 ```
   <div>
